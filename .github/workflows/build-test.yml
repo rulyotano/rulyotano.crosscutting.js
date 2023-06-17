@@ -18,6 +18,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+      - run: echo "Workspace = ${{github.workspace}}"
+      - run: echo "Path = ${{inputs.path}}"
       - run: npm i -g yarn
       - run: cd ${{ inputs.path }}
       - run: yarn
