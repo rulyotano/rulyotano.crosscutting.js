@@ -12,4 +12,4 @@ jobs:
   publish:
       uses: ./.github/workflows/npm-publish.yml
       with:
-        path: ${{ github.workspace }}/src/rulyotano.math
+        path: ./src/rulyotano.math
