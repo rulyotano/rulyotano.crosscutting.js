@@ -18,10 +18,11 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          
+      - run: npm i -g yarn
       - run: cd ${{ inputs.path }}
-      - run: npm ci
-      - run: npm test
+      - run: yarn
+      - run: yarn compile
+      - run: yarn test
 
   publish-npm:
     needs: build
