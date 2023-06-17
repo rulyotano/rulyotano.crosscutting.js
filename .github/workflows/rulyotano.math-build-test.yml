@@ -1,0 +1,15 @@
+
+name: Build & Test rulyotano.match
+
+on:
+  pull_request:
+    branches: 
+      - main
+    paths:
+      - ./src/rulyotano.math
+
+jobs:
+  publish:
+      uses: ./.github/workflows/build-test.yml
+      with:
+        path: ./src/rulyotano.math
