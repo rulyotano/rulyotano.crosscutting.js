@@ -6,7 +6,7 @@ on:
     branches: 
       - main
     paths:
-      - ./src/rulyotano.math/**
+      - rulyotano.math/**
 
 jobs:
   publish:
