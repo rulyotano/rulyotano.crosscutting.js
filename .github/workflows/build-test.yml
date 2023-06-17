@@ -19,8 +19,6 @@ jobs:
         with:
           node-version: 16
       - run: npm i -g yarn
-      - run: cd ${{ inputs.path }}
-      - run: yarn
-      - run: cd ${{ inputs.path }}
-      - run: yarn compile
-      - run: yarn test
+      - run: yarn ${{ inputs.path }}
+      - run: yarn compile ${{ inputs.path }}
+      - run: yarn test ${{ inputs.path }}
