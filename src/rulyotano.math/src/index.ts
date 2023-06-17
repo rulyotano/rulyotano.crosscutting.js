@@ -7,7 +7,6 @@ const trailing = 'Semicolon';
 
 const why = 'am I tabbed?';
 
-
 export function doSomeStuff(
   withThis: string,
   andThat: string,

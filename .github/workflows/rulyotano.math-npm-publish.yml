@@ -1,0 +1,15 @@
+
+name: Npm publish rulyotano.match
+
+on:
+  push:
+    branches: 
+      - main
+    paths:
+      - ./src/rulyotano.math
+
+jobs:
+  publish:
+      uses: ./.github/workflows/npm-publish.yml
+      with:
+        path: ./src/rulyotano.math
