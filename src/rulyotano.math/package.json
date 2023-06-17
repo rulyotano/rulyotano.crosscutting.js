@@ -2,9 +2,17 @@
   "name": "rulyotano.math",
   "version": "0.1.0",
   "description": "Math helper for js",
-  "main": "index.js",
-  "repository": "https://github.com/rulyotano/rulyotano.crosscutting.js",
-  "author": "rulyotano",
+  "main": "./dist/index.js",
+  "keywords": [
+    "functions",
+    "helpers",
+    "math"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rulyotano/rulyotano.crosscutting.js"
+  },
+  "author": "Raúl Otaño Hurtado",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.2",

@@ -5,6 +5,7 @@
     "outDir": "build"
   },
   "include": [
+    "index.ts",
     "src/**/*.ts",
     "test/**/*.ts"
   ]

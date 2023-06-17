@@ -19,10 +19,8 @@ jobs:
         with:
           node-version: 16
       - run: npm i -g yarn
-      - run: cd ${{ inputs.path }}
-      - run: yarn
-      - run: yarn compile
-      - run: yarn test
+      - run: yarn --cwd ${{ inputs.path }}
+      - run: yarn --cwd ${{ inputs.path }} test
 
   publish-npm:
     needs: build
@@ -33,8 +31,8 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: cd ${{ inputs.path }}
-      - run: npm ci
-      - run: npm publish
+      - run: yarn install --cwd ${{ inputs.path }} --immutable --immutable-cache --check-cache
+      - run: yarn --cwd ${{ inputs.path }} compile
+      - run: yarn --cwd ${{ inputs.path }} publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
