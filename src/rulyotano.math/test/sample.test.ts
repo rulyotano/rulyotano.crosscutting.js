@@ -9,6 +9,6 @@ describe('... > sample', () => {
 
   test('Fake test', () => {
     doSomeStuff('', '', []);
-    expect(1).toBeTruthy();
+    expect(1).toBeTruthy(); // change
   });
 });
