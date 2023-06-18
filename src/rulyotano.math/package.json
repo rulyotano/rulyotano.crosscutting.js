@@ -1,8 +1,9 @@
 {
   "name": "rulyotano.math",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Math helper for js",
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "keywords": [
     "functions",
     "helpers",
