@@ -1,5 +1,4 @@
-
-name: Npm publish rulyotano.match
+name: rulyotano.match - Publish
 
 on:
   push:
