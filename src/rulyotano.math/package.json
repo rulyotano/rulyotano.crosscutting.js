@@ -1,6 +1,6 @@
 {
   "name": "rulyotano.math",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Math helper for js",
   "main": "./dist/index.js",
   "keywords": [
@@ -12,7 +12,9 @@
     "type": "git",
     "url": "https://github.com/rulyotano/rulyotano.crosscutting.js"
   },
+  "homepage": "https://github.com/rulyotano/rulyotano.crosscutting.js/tree/main/src/rulyotano.math",
   "author": "Raúl Otaño Hurtado",
+  "readme": "",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.2",
