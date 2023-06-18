@@ -27,10 +27,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3        
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
+          always-auth: true
       - run: yarn install --cwd ${{ inputs.path }} --immutable --immutable-cache --check-cache
       - run: yarn --cwd ${{ inputs.path }} compile
       - run: yarn --cwd ${{ inputs.path }} publish
