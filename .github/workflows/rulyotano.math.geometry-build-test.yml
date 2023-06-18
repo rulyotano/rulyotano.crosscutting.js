@@ -1,14 +1,14 @@
-name: rulyotano.math - Build & Test 
+name: rulyotano.math.geometry - Build & Test 
 
 on:
   pull_request:
     branches: 
       - main
     paths:
-      - src/rulyotano.math/**
+      - src/rulyotano.math.geometry/**
 
 jobs:
   publish:
       uses: ./.github/workflows/build-test.yml
       with:
-        path: ./src/rulyotano.math
+        path: ./src/rulyotano.math.geometry
