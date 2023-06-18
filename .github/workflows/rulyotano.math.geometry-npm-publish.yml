@@ -1,15 +1,15 @@
-name: rulyotano.math - Publish
+name: rulyotano.math.geometry - Publish
 
 on:
   push:
     branches: 
       - main
     paths:
-      - src/rulyotano.math/**
+      - src/rulyotano.math.geometry/**
 
 jobs:
   publish:
       uses: ./.github/workflows/npm-publish.yml
       with:
-        path: ./src/rulyotano.math
+        path: ./src/rulyotano.math.geometry
       secrets: inherit

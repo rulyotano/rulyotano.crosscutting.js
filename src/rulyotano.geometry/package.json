@@ -1,9 +1,0 @@
-{
-  "name": "rulyotano.geometry",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "rulyotano.math": "^0.2.0"
-  }
-}
