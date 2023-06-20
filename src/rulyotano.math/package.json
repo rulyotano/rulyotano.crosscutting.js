@@ -1,13 +1,14 @@
 {
   "name": "rulyotano.math",
-  "version": "0.3.0",
+  "version": "0.9.0",
   "description": "Math helper for js",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [
     "functions",
     "helpers",
-    "math"
+    "math",
+    "numeric"
   ],
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
     "prepare": "yarn run compile",
     "pretest": "yarn run compile",
     "posttest": "yarn run lint",
-    "test": "jest"
+    "test": "jest",
+    "test-watch": "jest --watch"
   }
 }
