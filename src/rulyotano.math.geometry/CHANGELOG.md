@@ -2,6 +2,6 @@
 
 ## [Unreleased]
 
-## [0.0.1] - 2022-09-12
+## [0.1.0] - 2023-06-22
 ### Added
-- First Changes
+- Helper and Point classes. First Helper methods like convert from degree to radians and euclidean distance
