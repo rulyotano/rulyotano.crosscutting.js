@@ -35,7 +35,7 @@
     "prepare": "yarn run compile",
     "pretest": "yarn run compile",
     "posttest": "yarn run lint",
-    "test": "jest",
+    "test": "jest --ci",
     "test-watch": "jest --watch"
   }
 }
