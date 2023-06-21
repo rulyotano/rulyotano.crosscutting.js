@@ -1,10 +1,10 @@
 {
   "name": "rulyotano.math.geometry",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "keywords": [],
+  "keywords": ["math", "geometry", "euclidean", "degree", "radian", "point", "helper", "distance"],
   "repository": {
     "type": "git",
     "url": "https://github.com/rulyotano/rulyotano.crosscutting.js"
