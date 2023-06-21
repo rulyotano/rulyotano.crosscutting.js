@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "name": "Jest All",
+          "type": "node",
+          "request": "launch",
+          "program": "${workspaceRoot}/node_modules/.bin/jest",
+          "args": [
+            "--runInBand",
+          ],
+          "cwd": "${workspaceRoot}",
+          "protocol": "inspector",
+          "console": "integratedTerminal",
+          "internalConsoleOptions": "neverOpen",
+          "env": { "CI": "true" },
+          "disableOptimisticBPs": true,
+          "windows": {
+            "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+          }
+        }
+  ]
+}

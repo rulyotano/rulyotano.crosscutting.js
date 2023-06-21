@@ -5,7 +5,7 @@ on:
     branches: 
       - main
     paths:
-      - src/rulyotano.math.geometry/**
+      - src/rulyotano.math.geometry/package.json
 
 jobs:
   publish:
