@@ -1,6 +1,6 @@
 {
   "name": "rulyotano.math",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Math helper for js",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

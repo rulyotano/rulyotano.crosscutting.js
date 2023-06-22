@@ -8,8 +8,6 @@ Interpolation by using Bezier Curves
 
 ## Bezier Curves
 
-This library can be used as a nuget package. 
-
 Install the npm package [rulyotarulyotano.math.interpolation.bezier](https://www.npmjs.com/package/rulyotano.math.interpolation.bezier) like this:
 
 ```yarn
