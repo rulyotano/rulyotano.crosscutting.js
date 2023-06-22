@@ -1,6 +1,6 @@
 {
   "name": "rulyotano.math.interpolation.bezier",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tools for interpolation a set of 2D points by using Cubic Bezier Curves algorithm.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
