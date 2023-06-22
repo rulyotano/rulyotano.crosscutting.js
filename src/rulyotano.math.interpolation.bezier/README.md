@@ -41,8 +41,8 @@ A more detailed usage example can be found at this wpf sample: [rulyotano/wpf-be
 You can convert the result of the `pointsToBezierCurves` by using an extension method named `bezierToPath`:
 
 ``` ts
-  const result = BezierInterpolation.pointsToBezierCurves(samplePoints1.ToList(), false);
-  const path = BezierInterpolation.bezierToPath(result);
+  const curves = BezierInterpolation.pointsToBezierCurves(points, false);
+  const path = BezierInterpolation.bezierToPath(curves);
 ```
 
 This will generate a path string like this, that can be used in `xaml` or `html`:

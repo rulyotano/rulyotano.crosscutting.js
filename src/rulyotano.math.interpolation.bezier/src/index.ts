@@ -1,4 +1,2 @@
-export {
-  default as BezierInterpolation,
-  BezierCurveSegment,
-} from './BezierInterpolation';
+export {default as BezierInterpolation} from './BezierInterpolation';
+export {default as BezierCurveSegment} from './BezierCurveSegment';

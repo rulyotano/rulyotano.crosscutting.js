@@ -4,7 +4,14 @@
   "description": "Tools for interpolation a set of 2D points by using Cubic Bezier Curves algorithm.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "keywords": ["interpolation", "bezier", "curves", "points", "2", "math"],
+  "keywords": [
+    "interpolation",
+    "bezier",
+    "curves",
+    "points",
+    "2d",
+    "math"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/rulyotano/rulyotano.crosscutting.js"
@@ -32,5 +39,9 @@
     "posttest": "yarn run lint",
     "test": "jest --ci",
     "test-watch": "jest --watch"
+  },
+  "dependencies": {
+    "rulyotano.math": "0.9.0",
+    "rulyotano.math.geometry": "0.1.0"
   }
 }
