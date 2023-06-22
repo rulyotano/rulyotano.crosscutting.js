@@ -1,0 +1,15 @@
+name: rulyotano.math.interpolation.bezier - Publish
+
+on:
+  push:
+    branches: 
+      - main
+    paths:
+      - src/rulyotano.math.interpolation.bezier/package.json
+
+jobs:
+  publish:
+      uses: ./.github/workflows/npm-publish.yml
+      with:
+        path: ./src/rulyotano.math.interpolation.bezier
+      secrets: inherit

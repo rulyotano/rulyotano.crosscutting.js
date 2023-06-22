@@ -1,0 +1,14 @@
+name: rulyotano.math.interpolation.bezier - Build & Test 
+
+on:
+  pull_request:
+    branches: 
+      - main
+    paths:
+      - src/rulyotano.math.interpolation.bezier/**
+
+jobs:
+  publish:
+      uses: ./.github/workflows/build-test.yml
+      with:
+        path: ./src/rulyotano.math.interpolation.bezier
