@@ -7,10 +7,12 @@
   "keywords": [
     "interpolation",
     "bezier",
-    "curves",
-    "points",
+    "beizer",
+    "curve",
+    "point",
     "2d",
-    "math"
+    "math",
+    "xpath"
   ],
   "repository": {
     "type": "git",
