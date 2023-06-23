@@ -1,4 +1,4 @@
-import {BezierInterpolation} from '../index';
+import {BezierInterpolation, Point} from '../index';
 
 describe('default exports', () => {
   beforeEach(() => {});
@@ -7,5 +7,9 @@ describe('default exports', () => {
 
   test('Should export BezierInterpolation', () => {
     expect(BezierInterpolation).toBeTruthy();
+  });
+
+  test('Should export Point', () => {
+    expect(Point).toBeTruthy();
   });
 });
