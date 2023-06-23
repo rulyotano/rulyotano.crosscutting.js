@@ -19,10 +19,10 @@ describe('src > BezierInterpolation', () => {
         samplePoints,
         false
       );
-      expect(samplePoints[0].equals(result[0].start)).toBeTruthy();
+      expect(samplePoints[0].equals(result.segments[0].start)).toBeTruthy();
       expect(
         samplePoints[samplePoints.length - 1].equals(
-          result[result.length - 1].end
+          result.segments[result.segments.length - 1].end
         )
       ).toBeTruthy();
     });
@@ -32,9 +32,9 @@ describe('src > BezierInterpolation', () => {
         samplePoints,
         true
       );
-      expect(samplePoints[0].equals(result[0].start)).toBeTruthy();
+      expect(samplePoints[0].equals(result.segments[0].start)).toBeTruthy();
       expect(
-        samplePoints[0].equals(result[result.length - 1].end)
+        samplePoints[0].equals(result.segments[result.segments.length - 1].end)
       ).toBeTruthy();
     });
 
@@ -43,7 +43,7 @@ describe('src > BezierInterpolation', () => {
         samplePoints.slice(0, -1),
         false
       );
-      expect(result.length).toBe(0);
+      expect(result.segments.length).toBe(0);
     });
 
     testCases.forEach((testCase, index) => {
@@ -54,9 +54,9 @@ describe('src > BezierInterpolation', () => {
           testCase.smooth
         );
 
-        expect(result.length).toBe(testCase.expectedOutput.length);
+        expect(result.segments.length).toBe(testCase.expectedOutput.length);
         expect(
-          result.every((curve, index) =>
+          result.segments.every((curve, index) =>
             curve.equals(testCase.expectedOutput[index])
           )
         ).toBeTruthy();

@@ -1,4 +1,4 @@
-import {BezierInterpolation, BezierCurveSegment} from '../index';
+import {BezierInterpolation} from '../index';
 
 describe('default exports', () => {
   beforeEach(() => {});
@@ -7,6 +7,5 @@ describe('default exports', () => {
 
   test('Should export BezierInterpolation', () => {
     expect(BezierInterpolation).toBeTruthy();
-    expect(BezierCurveSegment).toBeTruthy();
   });
 });

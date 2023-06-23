@@ -1,5 +1,5 @@
 import {Point} from 'rulyotano.math.geometry';
-import BezierCurveSegment from '../BezierCurveSegment';
+import {BezierCurveSegment} from '../BezierCurve';
 
 export type TestCaseBezier = {
   isClosed: boolean;

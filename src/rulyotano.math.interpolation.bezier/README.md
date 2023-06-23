@@ -40,7 +40,7 @@ You can convert the result of the `pointsToBezierCurves` by using an extension m
 
 ``` ts
   const curves = BezierInterpolation.pointsToBezierCurves(points, false);
-  const path = BezierInterpolation.bezierToPath(curves);
+  const path = curves.toPath();
 ```
 
 This will generate a path string like this, that can be used in `xaml` or `html`:

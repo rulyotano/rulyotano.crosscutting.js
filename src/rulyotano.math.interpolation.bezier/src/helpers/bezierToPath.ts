@@ -1,4 +1,4 @@
-import BezierCurveSegment from '../BezierCurveSegment';
+import {BezierCurveSegment} from '../BezierCurve';
 
 export default function bezierToPath(
   bezierPaths: Array<BezierCurveSegment>
