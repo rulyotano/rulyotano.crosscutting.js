@@ -6,6 +6,8 @@
 
 Interpolation by using Bezier Curves
 
+Play with [this DEMO](https://rulyotano.com/demos/bezier) and see an example of what we can achieve by using this package. 
+
 ## Bezier Curves
 
 Install the npm package [rulyotarulyotano.math.interpolation.bezier](https://www.npmjs.com/package/rulyotano.math.interpolation.bezier) like this:
@@ -21,7 +23,9 @@ npm install rulyotano.math.interpolation.bezier
 Then it can be used like this:
 
 ```ts
-  import {BezierInterpolation} from "rulyotano.math.interpolation.bezier"
+  import {BezierInterpolation, Points} from "rulyotano.math.interpolation.bezier";
+
+  const points = [ new Point(1, 2), new Point(2, 3), new Point(3, 4), new Point(4, 5) ];
 
   const result = BezierInterpolation.pointsToBezierCurves(points, isClosedCurve, smoothValue);
 ```
@@ -39,8 +43,7 @@ A more detailed usage example can be found at this wpf sample: [rulyotano/wpf-be
 You can convert the result of the `pointsToBezierCurves` by using an extension method named `bezierToPath`:
 
 ``` ts
-  const curves = BezierInterpolation.pointsToBezierCurves(points, false);
-  const path = BezierInterpolation.bezierToPath(curves);
+  const path = BezierInterpolation.pointsToBezierCurves(points, false).toPath();
 ```
 
 This will generate a path string like this, that can be used in `xaml` or `html`:

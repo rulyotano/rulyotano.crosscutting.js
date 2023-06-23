@@ -1,5 +1,5 @@
 import {Helpers, Point} from 'rulyotano.math.geometry';
-import BezierCurveSegment from '../BezierCurveSegment';
+import {BezierCurveSegment} from '../BezierCurve';
 import {Numeric} from 'rulyotano.math';
 
 export default function pointsToBezierCurves(

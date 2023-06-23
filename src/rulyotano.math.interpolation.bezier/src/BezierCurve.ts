@@ -1,6 +1,23 @@
 import {Point} from 'rulyotano.math.geometry';
+import bezierToPath from './helpers/bezierToPath';
 
-export default class BezierCurveSegment {
+export default class BezierCurve {
+  segments: Array<BezierCurveSegment>;
+
+  constructor(segments: Array<BezierCurveSegment>) {
+    this.segments = segments;
+  }
+
+  /**
+   * Convert this bezier curve into a path string. Which can be used in svg, html or xaml formats.
+   * @returns {string} path or xpath
+   */
+  toPath() {
+    return bezierToPath(this.segments);
+  }
+}
+
+export class BezierCurveSegment {
   start: Point;
   firstControl: Point;
   secondControl: Point;
